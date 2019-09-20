@@ -4,9 +4,9 @@ services:
     build:
       context: ./grav-page
       args:
-        GRAV_VERSION: 1.6.15
-        GRAV_SHA1: AC2A5DFF69C4171AEA7A0412420AAC439F80DD14
-    image: devops-guide-grav:1.6.15
+        GRAV_VERSION: 1.6.16
+        GRAV_SHA1: 4FBB140FCF110C692A9D8102041C3F26B2FCA9DA
+    image: devops-guide-grav:1.6.16
     ports:
       - "8080:80"
     volumes:
