@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  grav-page:
+    build:
+      context: ./grav-page
+      args:
+        GRAV_VERSION: 1.6.15
+        GRAV_SHA1: AC2A5DFF69C4171AEA7A0412420AAC439F80DD14
+    image: devops-guide-grav:1.6.15
+    ports:
+      - "8080:80"
+    volumes:
+      - ./grav-page/user:/var/www/html/user
